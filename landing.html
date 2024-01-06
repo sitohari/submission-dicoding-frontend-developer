@@ -5,27 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Halaman - KATAR 05</title>
   <link rel="stylesheet" href="assets/styles/main.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
-  <header class="header-container">
+  <header>
+    <div class="header-container">
     <nav>
       <div class="logo">
           <a href="#" class="brand-logo">
             <img width="110px" src="assets/img/logo-katar.svg" alt="Logo">
           </a>
       </div>
-        <ul class="nav-menu">
+      <div id="icon-list" class="icon-list">
+        <i class="ph ph-list"></i>
+      </div>
+      <ul class="nav-menu hidden" id="menu-list">
           <li><a href="#">Home</a></li>
           <li><a href="#tentang-kami">Tentang Kami</a></li>
           <li><a href="#visi-misi">Visi & Misi</a></li>
-        </ul>
+      </ul>
     </nav>
-    <!-- <div class="jumbotron">
+    <div class="jumbotron">
       <h1>
         WELCOME TO WEBSITE KATAR 05 PENGURUS KARANG TARUNA RW 05 KELURAHAN MANGGA BESAR
       </h1>
-    </div> -->
+    </div>
+  </div>
   </header>
 
   <main>
@@ -33,7 +39,7 @@
       <article id="tentang-kami">
         <div class="card">
           <div class="tentang-kami">
-            <img src="assets/img/foto.png" alt="foto-anggota-katar">
+            <img src="assets/img/anggota-katar.JPG" alt="foto-anggota-katar">
             <div class="description">
               <h2>Tentang Kami</h2>
               <p>
@@ -72,7 +78,6 @@
         </div>
       </article>
     </div>
-
     <aside>
       <article class="profile">
         <header>
@@ -128,6 +133,7 @@
       </div>
     </div>
   </footer>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

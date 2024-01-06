@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-header{
-    display: inline;
+.header-container{
+   background-color: #3258E8;
 }
 
 body{
@@ -38,32 +38,38 @@ nav{
 
 .nav-menu li a:hover{
     font-weight: 700;
-    color:#3D3B40;
-    border-bottom: 1px solid #3D3B40;
+    color:#f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
 }
 
 nav .logo img{
     width: 100px;
 }
 
-/* .jumbotron{
-    margin: 0 auto;
-    margin-top: 85px;
+.icon-list{
+    font-size: 26px;
+    display: none;
 }
 
+.jumbotron{
+    padding: 10rem 4rem;
+} 
+
 .jumbotron h1{
-    color: #FFF;
+    padding: 2rem;
+    margin: 0 auto;
+    color: #f4f4f4;
     text-align: center;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-} */
+} 
 
 main{
     display: flex;
     flex: 1;
-    gap: 100px;
+    gap: 50px;
     margin-inline: auto;
     padding: 2rem 4rem;
     
@@ -75,8 +81,8 @@ main .content{
 }
 
 .card {
+    margin-bottom: 1rem;
     width: 100%;
-    margin-top: 30px;
     padding: 40px 40px 40px 40px;
     background-color: white; 
     box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.25); 
@@ -85,11 +91,13 @@ main .content{
 
 main .content .tentang-kami{
     display: flex;
+    flex-direction: column;
     flex: 1;
     gap: 25px;  
 }
 
 main .content #tentang-kami img{
+    width: 100%;
     flex-shrink: 0;
     padding: 0px;
 }
@@ -150,8 +158,8 @@ aside .profile .data{
 }
 
 aside .profile .data .table{
-   width: 100%;
-    padding: 40px;
+    display: flex;
+    margin-top: 4px;
     text-align: center;
     justify-content: center;
 }
@@ -163,7 +171,7 @@ aside .profile .data .table{
     font-weight: 700;
     line-height: normal;
 }
-.table tr{
+.table td{
     text-align: left;
     font-size: 16px;
     font-style: normal;
@@ -201,6 +209,25 @@ footer .copy-right{
     border-top: 2px solid #f4f4f4;
 }
 
+@media  screen and (max-width: 768px){
+    nav{
+        flex-wrap: wrap;
+    }
+
+    nav .nav-menu{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .icon-list{
+        display: flex;
+        align-items: center;
+    }
+    .hidden{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1000px){
     main {
         flex-flow: column nowrap;
@@ -208,11 +235,4 @@ footer .copy-right{
     main aside {
         align-self: center;
     }
-}
-
-@media screen and (max-width: 768px){
-    header{
-        flex-direction: column;
-    }
-    
 }
